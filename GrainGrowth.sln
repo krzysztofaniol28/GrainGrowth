@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrainGrowth2", "GrainGrowth2\GrainGrowth2.csproj", "{1C350600-A3FE-4396-851D-9D6080D3642C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrainGrowthCore", "GrainGrowthCore\GrainGrowthCore.csproj", "{D211EB17-FEA3-4B1D-964F-6889ED8C1ABD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C350600-A3FE-4396-851D-9D6080D3642C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C350600-A3FE-4396-851D-9D6080D3642C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C350600-A3FE-4396-851D-9D6080D3642C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C350600-A3FE-4396-851D-9D6080D3642C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D211EB17-FEA3-4B1D-964F-6889ED8C1ABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D211EB17-FEA3-4B1D-964F-6889ED8C1ABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D211EB17-FEA3-4B1D-964F-6889ED8C1ABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D211EB17-FEA3-4B1D-964F-6889ED8C1ABD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F1B14E5B-C73B-469D-AEC2-DF1AB43546C0}
+	EndGlobalSection
+EndGlobal
