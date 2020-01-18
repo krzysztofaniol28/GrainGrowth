@@ -61,7 +61,7 @@ namespace GrainGrowth2
 				int x = random.Next(board.GetLength(0) - 1);
 				int y = random.Next(board.GetLength(1) - 1);
 				int counter = numberOfTries;
-				while (counter > 0 && !board[x, y].Grain.IsInjection() && ((setX.Contains(x) && setY.Contains(y)) || (simulationDone && !neighborhood.IsBorder(board,x,y,BoundaryCondition.NormalBoundary))))
+				while (counter > 0 && !board[x, y].Grain.IsInclusion() && ((setX.Contains(x) && setY.Contains(y)) || (simulationDone && !neighborhood.IsBorder(board,x,y,BoundaryCondition.NormalBoundary))))
 				{
 					x = random.Next(board.GetLength(0) - 1);
 					y = random.Next(board.GetLength(1) - 1);

@@ -49,7 +49,7 @@ namespace GrainGrowth2
 		{
 			if (Grain.IsEmpty())
 				return Color.White;
-			else if (Grain.IsInjection())
+			else if (Grain.IsInclusion())
 				return Color.Black;
 			else
 			{

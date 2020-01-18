@@ -22,7 +22,7 @@ namespace GrainGrowthCore
 
         public bool SetGrain(Grain grain)
         {
-            if (Grain.IsEmpty() || grain.IsInjection())
+            if (Grain.IsEmpty() || grain.IsInclusion())
             {
                 Grain = grain;
                 return true;

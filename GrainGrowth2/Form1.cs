@@ -203,7 +203,7 @@ namespace GrainGrowth2
 					{
 						if (structureGrains.TryGetValue(board[i, j].Grain, out Grain newGrain))
 							board[i, j] = new DrawableCell(i, j, cellSize, newGrain);
-						else
+						else if(!board[i, j].Grain.IsInclusion())
 							board[i, j] = new DrawableCell(i, j, cellSize);
 					}
 

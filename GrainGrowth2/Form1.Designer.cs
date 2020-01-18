@@ -60,6 +60,7 @@
 			this.label9 = new System.Windows.Forms.Label();
 			this.getAllBoundariesButton = new System.Windows.Forms.Button();
 			this.clearActiveGrainsButton = new System.Windows.Forms.Button();
+			this.label10 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
@@ -299,7 +300,7 @@
 			// selectGrainButton
 			// 
 			this.selectGrainButton.Enabled = false;
-			this.selectGrainButton.Location = new System.Drawing.Point(590, 353);
+			this.selectGrainButton.Location = new System.Drawing.Point(590, 359);
 			this.selectGrainButton.Name = "selectGrainButton";
 			this.selectGrainButton.Size = new System.Drawing.Size(92, 23);
 			this.selectGrainButton.TabIndex = 22;
@@ -314,7 +315,7 @@
 			this.structureComboBox.Items.AddRange(new object[] {
             "Substructure",
             "Dual phase"});
-			this.structureComboBox.Location = new System.Drawing.Point(590, 317);
+			this.structureComboBox.Location = new System.Drawing.Point(590, 323);
 			this.structureComboBox.Name = "structureComboBox";
 			this.structureComboBox.Size = new System.Drawing.Size(109, 21);
 			this.structureComboBox.TabIndex = 23;
@@ -340,7 +341,7 @@
 			// label9
 			// 
 			this.label9.AutoSize = true;
-			this.label9.Location = new System.Drawing.Point(598, 294);
+			this.label9.Location = new System.Drawing.Point(598, 300);
 			this.label9.Name = "label9";
 			this.label9.Size = new System.Drawing.Size(50, 13);
 			this.label9.TabIndex = 26;
@@ -349,24 +350,33 @@
 			// getAllBoundariesButton
 			// 
 			this.getAllBoundariesButton.Enabled = false;
-			this.getAllBoundariesButton.Location = new System.Drawing.Point(794, 315);
+			this.getAllBoundariesButton.Location = new System.Drawing.Point(785, 321);
 			this.getAllBoundariesButton.Name = "getAllBoundariesButton";
-			this.getAllBoundariesButton.Size = new System.Drawing.Size(109, 23);
+			this.getAllBoundariesButton.Size = new System.Drawing.Size(118, 23);
 			this.getAllBoundariesButton.TabIndex = 28;
-			this.getAllBoundariesButton.Text = "Get all boundary";
+			this.getAllBoundariesButton.Text = "Show all boundaries";
 			this.getAllBoundariesButton.UseVisualStyleBackColor = true;
 			this.getAllBoundariesButton.Click += new System.EventHandler(this.getAllBoundariesButton_Click);
 			// 
 			// clearActiveGrainsButton
 			// 
 			this.clearActiveGrainsButton.Enabled = false;
-			this.clearActiveGrainsButton.Location = new System.Drawing.Point(794, 344);
+			this.clearActiveGrainsButton.Location = new System.Drawing.Point(785, 350);
 			this.clearActiveGrainsButton.Name = "clearActiveGrainsButton";
-			this.clearActiveGrainsButton.Size = new System.Drawing.Size(109, 23);
+			this.clearActiveGrainsButton.Size = new System.Drawing.Size(118, 23);
 			this.clearActiveGrainsButton.TabIndex = 29;
 			this.clearActiveGrainsButton.Text = "Clear grains";
 			this.clearActiveGrainsButton.UseVisualStyleBackColor = true;
 			this.clearActiveGrainsButton.Click += new System.EventHandler(this.clearActiveGrainsButton_Click);
+			// 
+			// label10
+			// 
+			this.label10.AutoSize = true;
+			this.label10.Location = new System.Drawing.Point(806, 300);
+			this.label10.Name = "label10";
+			this.label10.Size = new System.Drawing.Size(60, 13);
+			this.label10.TabIndex = 30;
+			this.label10.Text = "Boundaries";
 			// 
 			// Form1
 			// 
@@ -374,6 +384,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.DarkGray;
 			this.ClientSize = new System.Drawing.Size(932, 495);
+			this.Controls.Add(this.label10);
 			this.Controls.Add(this.clearActiveGrainsButton);
 			this.Controls.Add(this.getAllBoundariesButton);
 			this.Controls.Add(this.label9);
@@ -405,7 +416,7 @@
 			this.Controls.Add(this.menuStrip1);
 			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "Form1";
-			this.Text = "Form1";
+			this.Text = "GrainGrowth";
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
@@ -448,6 +459,7 @@
 		private System.Windows.Forms.Label label9;
 		private System.Windows.Forms.Button getAllBoundariesButton;
 		private System.Windows.Forms.Button clearActiveGrainsButton;
+		private System.Windows.Forms.Label label10;
 	}
 }
 

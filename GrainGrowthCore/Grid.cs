@@ -30,7 +30,7 @@ namespace GrainGrowthCore
 			{
 				for (int j = 0; j < sizeY; j++)
 				{
-					if (!board[i,j].Grain.IsEmpty() && !board[i, j].Grain.IsInjection() && neighborhood.IsBorder(board, i, j, BoundaryCondition.NormalBoundary))
+					if (!board[i,j].Grain.IsEmpty() && !board[i, j].Grain.IsInclusion() && neighborhood.IsBorder(board, i, j, BoundaryCondition.NormalBoundary))
 					{
 						nextBoard[i, j].SetGrain(Grain.InjectionGrain);
 					}
@@ -107,7 +107,7 @@ namespace GrainGrowthCore
 			{
 				for (int j = 0; j < sizeY; j++)
 				{
-					if(!board[i, j].Grain.IsInjection())
+					if(!board[i, j].Grain.IsInclusion())
 						board[i, j].ClearGrain();
 				}
 			}

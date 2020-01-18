@@ -11,8 +11,8 @@ namespace GrainGrowthCore
 		public static int EmptyGrainId = 0;
 		public static Grain EmptyGrain => new Grain(EmptyGrainId);
 
-		public static int InjectionGrainId = -1;
-		public static Grain InjectionGrain => new Grain(InjectionGrainId);
+		public static int InclusionGrainId = -1;
+		public static Grain InjectionGrain => new Grain(InclusionGrainId);
 		public static Grain DualPhaseGrain => new Grain(DualPhaseGrainId) { BlockGrow = true};
 		public static int DualPhaseGrainId = 5000;
 		public static void Reset() => _lastId = EmptyGrainId;
@@ -44,13 +44,13 @@ namespace GrainGrowthCore
 
 		public bool CanGrow()
 		{
-			return !IsEmpty() && !IsInjection() && !BlockGrow;
+			return !IsEmpty() && !IsInclusion() && !BlockGrow;
 		}
 
 		public bool IsEmpty()
 			=> Id == EmptyGrainId;
-		public bool IsInjection()
-			=> Id == InjectionGrainId;
+		public bool IsInclusion()
+			=> Id == InclusionGrainId;
 
 		public override int GetHashCode()
 		{
