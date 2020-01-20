@@ -1,5 +1,6 @@
 ﻿using GrainGrowthCore.TrancisionRules;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GrainGrowthCore.Neighborhoods
 {
@@ -27,24 +28,18 @@ namespace GrainGrowthCore.Neighborhoods
 		public override bool IsBorder(Cell[,] grid, int i, int j, BoundaryCondition boundary)
 		{
 			var activeGrain = grid[i, j].Grain;
-			if (GetRight(grid, i, j, boundary) != activeGrain)
-				return true;
-			if (GetBottomRight(grid, i, j, boundary) != activeGrain)
-				return true;
-			if (GetBottom(grid, i, j, boundary) != activeGrain)
-				return true;
-			if (GetBottomLeft(grid, i, j, boundary) != activeGrain)
-				return true;
-			if (GetLeft(grid, i, j, boundary) != activeGrain)
-				return true;
-			if (GetTopLeft(grid, i, j, boundary) != activeGrain)
-				return true;
-			if (GetTop(grid, i, j, boundary) != activeGrain)
-				return true;
-			if (GetTopRight(grid, i, j, boundary) != activeGrain)
-				return true;
-
-			return false;
+			var neighbors = new List<Grain>()
+			{
+				GetRight(grid, i, j, boundary),
+				GetBottomRight(grid, i, j, boundary),
+				GetBottom(grid, i, j, boundary),
+				GetBottomLeft(grid, i, j, boundary),
+				GetLeft(grid, i, j, boundary),
+				GetTopLeft(grid, i, j, boundary),
+				GetTop(grid, i, j, boundary),
+				GetTopRight(grid, i, j, boundary),
+			};
+			return neighbors.Any(x => x != activeGrain && !x.IsInclusion());
 		}
 	}
 }
